@@ -12,7 +12,8 @@ The first step in creating a system to allow for a user to be notified of the in
             'Content-Type': 'application/json', 
         }, 
     });
-}```
+}
+```
 
 This is so that the function can be triggered later on in the program when a note is being inserted into the database.
 
@@ -28,7 +29,8 @@ If multiple people wanted to work on the same notes database and all recieve the
             'Content-Type': 'application/json', 
         }, 
     });
-}```
+}
+```
 
 Similarly, if there are multiple users on a system, then the content in the body section of the POST request can be altered to say what table the note has been added to and by what user. This can be done through a similar paramaterization of the POST request.
 
@@ -42,6 +44,7 @@ Similarly, if there are multiple users on a system, then the content in the body
             'Content-Type': 'application/json', 
         }, 
     });
-}```
+}
+```
 
 This solution is based off of Client-Server architecture pattern, as it has the client which the user of the notes system based on the website which interacts frequently with the database server which stores all of the notes. The main data type that is used in this notification function is the string data type which is used to store the content of the body of the post request as well as any arguments.
